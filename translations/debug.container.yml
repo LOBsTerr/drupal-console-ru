@@ -1,26 +1,25 @@
 description: 'Отображает текущие сервисы для приложения.'
 arguments:
     service: 'Имя сервиса.'
-    method: 'Method name.'
-    arguments: 'Array of Arguments in CSV or JSON format.'
+    method: 'Имя метода.'
+    arguments: 'Массив аргументов в CSV или JSON формате.'
 messages:
-    service-id: 'Service ID'
-    class-name: 'Class Name'
-    service: Service
-    class: Class
-    interface: Interface(s)
+    service-id: 'ID сервиса'
+    class-name: 'Имя класса'
+    service: Сервис
+    class: Класс
+    interface: Интерфейс
     parent: 'Родительский класс'
-    variables: Variables
-    methods: Methods
-    arguments: Arguments
-    method: Method
-    return: Return
+    variables: Переменные
+    methods: Методы
+    arguments: Аргументы
+    method: Метод
+    return: Возврат
     service_id: 'Идентификатор сервиса'
     class_name: 'Имя класса'
 errors:
-    method-not-exists: 'This method doesn''t exists in this service.'
-    method_not_exists: 'This method doesn''t exists in this service.'
+    method-not-exists: 'Этот метод не существует в сервисе.'
 examples:
     -
-        description: 'Displays the views.views_data_helper services'
+        description: 'Отображает views.views_data_helper сервисы'
         execution: "drupal debug:container views.views_data_helper\n"
